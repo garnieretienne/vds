@@ -1,0 +1,19 @@
+.row
+  .small-12.columns
+    %h1= t(:publications).capitalize
+.row
+  .small-12.columns
+    %table
+      %thead
+        %tr
+          %th.main-column= t(:title).capitalize
+          %th= t(:published_at).capitalize
+          %th= t(:actions).capitalize
+      %tbody
+        - @publications.each do |publication|
+          %tr
+            %td= publication.title
+            %td= l(publication.created_at, format: :short)
+            %td
+              = link_to t(:edit), "#", class: "inline tiny button"
+              = link_to t(:delete), "#", class: "inline tiny button alert"

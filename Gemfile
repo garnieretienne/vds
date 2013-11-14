@@ -52,3 +52,6 @@ gem "haml-rails"
 
 # Use ZURB foundation framework
 gem 'zurb-foundation', '~> 4.0.0'
+
+# Add rails locale data
+gem 'rails-i18n', '~> 4.0.0'

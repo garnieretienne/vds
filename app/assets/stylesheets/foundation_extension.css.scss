@@ -1,0 +1,18 @@
+/*
+ * Used to extend foundation rules
+*/
+
+// Format table
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  .main-column {
+    width: 50%;
+  }
+}
+
+// Display inline button correctly
+.inline.button {
+  margin: 0;
+}
