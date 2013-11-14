@@ -1,8 +1,17 @@
 fr:
+  activerecord:
+    models:
+      publication: "Publication"
+    attributes:
+      publication:
+        title: "Titre"
+        content: "Contenu"
   publications: "publications"
   publication: "publication"
   title: "titre"
+  content: "contenu"
   published_at: "publié le"
   actions: "actions"
   edit: "éditer"
   delete: "supprimer"
+  edit_publication: "éditer la publication"

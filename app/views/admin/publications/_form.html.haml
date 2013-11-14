@@ -1,0 +1,8 @@
+= errors_for @publication
+
+= form_for [:admin, @publication] do |f|
+  = f.label :title, t(:title).mb_chars.capitalize
+  = f.text_field :title
+  = f.label :content, t(:content).mb_chars.capitalize
+  = f.text_area :content
+  = f.submit class: "small button"

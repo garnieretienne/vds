@@ -12,7 +12,34 @@ table {
   }
 }
 
+// Format unordered list
+ul {
+  padding-left: 1em;
+}
+
 // Display inline button correctly
 .inline.button {
   margin: 0;
+}
+
+// Style Rails `field_with_errors`
+.field_with_errors {
+  label {
+    color: red;
+  }
+
+  input[type=text], textarea {
+    border-color: red;
+  }
+}
+
+// Style error messages
+.error_messages {
+  list-style-type: none;
+  background-color: red;
+  padding: 1em;
+
+  li:before {
+    content: "✖ ";
+  }
 }
