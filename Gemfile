@@ -46,3 +46,7 @@ gem 'debugger', group: [:development, :test]
 
 # Use Procfile
 gem 'foreman', group: [:development]
+
+# Use HAML templates
+gem "haml-rails"
+
