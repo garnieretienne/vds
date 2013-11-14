@@ -50,3 +50,5 @@ gem 'foreman', group: [:development]
 # Use HAML templates
 gem "haml-rails"
 
+# Use ZURB foundation framework
+gem 'zurb-foundation', '~> 4.0.0'
