@@ -2,6 +2,11 @@
 
 body {
   background-color: $dark-gray;
+  color: $white;
+
+  a {
+    color: inherit;
+  }
 
   header#page-header {
     background-image: url(image_path('gray_pattern.jpg'));

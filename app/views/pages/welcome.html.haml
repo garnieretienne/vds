@@ -1,0 +1,6 @@
+#last-publication
+  .row
+    = image_tag "last_publication_text.png", id: "last-publication-text"
+    - if @publication
+      = render "publications/publication", publication: @publication
+      = link_to "Voir toutes les actualités", publications_path, id: "view-all-publications"
