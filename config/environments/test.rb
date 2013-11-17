@@ -37,3 +37,8 @@ VDS::Application.configure do
   # Set the default language for testing to english
   config.i18n.default_locale = :en
 end
+
+# Paperclip storage
+Paperclip::Attachment.default_options.merge!(
+  path: Rails.root.join('tmp', 'testing', 'attachments', ':class', ':id', ':style', ':basename.:extension').to_path
+)

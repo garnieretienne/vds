@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131114161553) do
+ActiveRecord::Schema.define(version: 20131117162231) do
 
   create_table "publications", force: true do |t|
-    t.string   "title",      null: false
-    t.text     "content",    null: false
+    t.string   "title",                  null: false
+    t.text     "content",                null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "thumbnail_file_name"
+    t.string   "thumbnail_content_type"
+    t.integer  "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
   end
 
 end
