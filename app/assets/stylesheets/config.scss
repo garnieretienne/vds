@@ -1,4 +1,15 @@
 // Colors
-$dark-red: #A00D0D;
-$red: #E02828;
-$light-red: #FF6868;
+$dark-red: #a00d0d;
+$red: #e02828;
+$light-red: #ff6868;
+$dark-gray: #312b28;
+$gray: #929292;
+$white: #e6e6e6;
+$black: #1c1c1c;
+
+// Mixins
+@mixin shadow {
+  -webkit-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 40px 1px rgba(0,0,0,0.75);
+}

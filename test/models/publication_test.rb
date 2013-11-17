@@ -26,4 +26,10 @@ class PublicationTest < ActiveSupport::TestCase
     publication.thumbnail = attachments('big_file.png')
     assert_not publication.valid?
   end
+
+  test "the convertion of publication markdown content to html" do
+    publication = Publication.new title: "My publication"
+    publication.content = "# Title"
+    assert_equal "<h1>Title</h1>\n", publication.to_html
+  end
 end

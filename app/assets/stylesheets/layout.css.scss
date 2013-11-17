@@ -1,0 +1,29 @@
+@import "config";
+
+body {
+  background-color: $dark-gray;
+
+  header#page-header {
+    background-image: url(image_path('gray_pattern.jpg'));
+    padding: 2em;
+    text-align: center;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+
+    #logo_vds {
+      height: 6em;
+    }
+  }
+
+  footer#page-footer {
+    background-image: url(image_path('footer_pattern.jpg'));
+    padding: 2em;
+    text-align: center;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+
+    img {
+      height: 4em;
+    }
+  }
+}

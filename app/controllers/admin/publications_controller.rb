@@ -1,4 +1,5 @@
 class Admin::PublicationsController < ApplicationController
+  layout "admin"
 
   before_action :load_publication, only: [:edit, :update]
 

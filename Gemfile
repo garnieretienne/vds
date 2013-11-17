@@ -58,3 +58,6 @@ gem 'rails-i18n', '~> 4.0.0'
 
 # Store images using paperclip
 gem 'paperclip'
+
+# Render markdown content
+gem 'redcarpet'
