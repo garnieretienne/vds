@@ -2,6 +2,8 @@
  * Used to extend foundation rules
 */
 
+@import "config";
+
 // Format table
 table {
   width: 100%;
@@ -25,21 +27,31 @@ ul {
 // Style Rails `field_with_errors`
 .field_with_errors {
   label {
-    color: red;
+    color: $red;
   }
 
   input[type=text], textarea {
-    border-color: red;
+    border-color: $red;
   }
 }
 
 // Style error messages
 .error_messages {
   list-style-type: none;
-  background-color: red;
+  background-color: $light-red;
   padding: 1em;
+  border: 1px solid $dark-red;
+  color: $dark-red;
 
   li:before {
     content: "✖ ";
+  }
+}
+
+// Allow vertical resizing of the textarea
+form {
+  textarea {
+    resize: vertical;
+    min-height: 20em;
   }
 }
