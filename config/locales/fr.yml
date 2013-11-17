@@ -18,4 +18,6 @@ fr:
   actions: "actions"
   edit: "éditer"
   delete: "supprimer"
+  cancel: "annuler"
   edit_publication: "éditer la publication"
+  new_publication: "nouvelle publication"

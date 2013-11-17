@@ -6,6 +6,19 @@ class Admin::PublicationsController < ApplicationController
     @publications = Publication.all
   end
 
+  def new
+    @publication = Publication.new
+  end
+
+  def create
+    @publication = Publication.new(publication_params)
+    if @publication.save
+      redirect_to admin_publications_path
+    else
+      render :new
+    end
+  end
+
   def edit
   end
 

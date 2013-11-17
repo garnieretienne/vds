@@ -8,11 +8,11 @@
       = f.label :delete_thumbnail do
         = t(:delete_thumbnail).mb_chars.capitalize
         = f.check_box :delete_thumbnail
-    = f.label :thumbnail do
-      = t(:thumbnail).mb_chars.capitalize
-      = f.file_field :thumbnail
+  = f.label :thumbnail, t(:thumbnail).mb_chars.capitalize
+  = f.file_field :thumbnail
   = f.label :title, t(:title).mb_chars.capitalize
   = f.text_field :title
   = f.label :content, t(:content).mb_chars.capitalize
   = f.text_area :content
   = f.submit class: "small button"
+  = link_to t(:cancel).mb_chars.capitalize, admin_publications_path, class: "small button alert"
