@@ -1,3 +1,27 @@
 // Place all the styles related to the admin/publications controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.new_publication, .edit_publication {
+
+  #publication_thumbnail_image {
+    margin-bottom: 1em;
+    width: 100%;
+  }
+
+  label[for=publication_delete_thumbnail] {
+    text-align: right;
+    font-weight: inherit;
+    font-style: italic;
+  }
+}
+
+#publications {
+
+  .publication_thumbnail {
+    text-align: center;
+    img {
+      max-height: 1.6em;
+    }
+  }
+}

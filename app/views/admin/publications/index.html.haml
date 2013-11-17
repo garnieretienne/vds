@@ -3,15 +3,17 @@
     %h1= t(:publications).mb_chars.capitalize
 .row
   .small-12.columns
-    %table
+    %table#publications
       %thead
         %tr
+          %th= t(:thumbnail).mb_chars.capitalize
           %th.main-column= t(:title).mb_chars.capitalize
           %th= t(:published_at).mb_chars.capitalize
           %th= t(:actions).mb_chars.capitalize
       %tbody
         - @publications.each do |publication|
           %tr
+            %td.publication_thumbnail= image_tag(publication.thumbnail(:thumb)) if publication.thumbnail?
             %td= publication.title
             %td= l(publication.created_at, format: :short)
             %td

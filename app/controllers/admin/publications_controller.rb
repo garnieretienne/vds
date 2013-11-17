@@ -24,6 +24,6 @@ class Admin::PublicationsController < ApplicationController
   end
 
   def publication_params
-    params.require(:publication).permit(:title, :content)
+    params.require(:publication).permit(:title, :content, :thumbnail, :delete_thumbnail)
   end
 end

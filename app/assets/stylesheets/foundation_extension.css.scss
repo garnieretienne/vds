@@ -48,10 +48,23 @@ ul {
   }
 }
 
-// Allow vertical resizing of the textarea
+// Default style for some form elements
 form {
+  label {
+    font-weight: bold;
+    margin-bottom: 0.4em;
+
+    input[type=checkbox] {
+      vertical-align: middle;
+    }
+  }
+
   textarea {
     resize: vertical;
     min-height: 20em;
+  }
+
+  input[type=file] {
+    margin-bottom: 1em;
   }
 }
