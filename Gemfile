@@ -9,6 +9,9 @@ gem 'sqlite3', group: [:development, :test]
 # Use postgres as a database for Active Record in production
 gem 'pg', group: [:production]
 
+# Use puma web server in production
+gem 'puma', group: [:production]
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
