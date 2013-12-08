@@ -1,9 +1,12 @@
 VDS::Application.routes.draw do
-  
   resources :publications, only: [:index, :show]
 
   namespace :admin do
     resources :publications
+  end
+
+  scope '/admin' do
+    devise_for :users
   end
 
   root 'pages#welcome'

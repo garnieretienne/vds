@@ -25,5 +25,10 @@ module VDS
 
     # Set the default language to French
     config.i18n.default_locale = :fr
+
+    # Tell Devise to use the correct layout
+    config.to_prepare do
+      Devise::SessionsController.layout "admin" 
+    end
   end
 end

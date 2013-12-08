@@ -61,3 +61,6 @@ gem 'paperclip'
 
 # Render markdown content
 gem 'redcarpet'
+
+# Manage authentication
+gem 'devise'
