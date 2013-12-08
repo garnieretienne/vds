@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'sqlite3', group: [:development, :test]
 
 # Use postgres as a database for Active Record in production
-gem 'pg'
+gem 'pg', group: [:production]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
