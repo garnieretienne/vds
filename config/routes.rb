@@ -2,6 +2,7 @@ VDS::Application.routes.draw do
   resources :publications, only: [:index, :show]
 
   namespace :admin do
+    root 'publications#index'
     resources :publications
   end
 
