@@ -10,7 +10,7 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: [:production]
 
 # Use puma web server in production
-gem 'puma', group: [:production]
+gem 'puma'#, group: [:production]
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -70,3 +70,6 @@ gem 'redcarpet'
 
 # Manage authentication
 gem 'devise'
+
+# Support for heroku hosting
+gem 'rails_12factor', group: :production
