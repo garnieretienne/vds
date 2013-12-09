@@ -36,3 +36,17 @@ DROPBOX_TOKEN=xxxxxxxx
 DROPBOX_TOKEN_SECRET=xxxxxxxx
 DROPBOX_USER_ID=xxxxxxxx
 ```
+
+# Managing admin users
+
+## List admin users
+
+`rake admin:list`
+
+## Create an admin user
+
+`rake admin:create USERNAME=username PASSWORD=password`
+
+## Delete an admin user
+
+`rake admin:delete USERNAME=username`
