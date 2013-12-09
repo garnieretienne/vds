@@ -32,3 +32,6 @@ module VDS
     end
   end
 end
+
+# Silence a warning caused by third party gems
+I18n.config.enforce_available_locales = true
