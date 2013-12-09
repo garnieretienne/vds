@@ -22,4 +22,6 @@ fr:
   edit_publication: "éditer la publication"
   new_publication: "nouvelle publication"
   sign_in: "Login"
+  sign_out: "Logout"
+  login_as: "Utilisateur"
   are_you_sure?: "Êtes vous sure ?"

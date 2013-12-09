@@ -23,6 +23,16 @@
 
 %body
 
+  .row
+    .small-12.columns
+      %header#header
+        - if current_user
+          .row
+            .small-11.columns
+              = "#{t(:login_as)} '#{current_user}'"
+            .small-1.columns
+              = link_to t(:sign_out), destroy_user_session_path, method: :delete, class: "inline tiny button alert"
+
   = yield
 
   = javascript_include_tag "application"
