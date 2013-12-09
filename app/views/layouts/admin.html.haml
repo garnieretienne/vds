@@ -15,7 +15,9 @@
   -# Set the viewport width to device width for mobile
   %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-  %title= content_for?(:title) ? yield(:title) : "Untitled"
+  %title
+    = yield(:title)+" - " if content_for?(:title)
+    Administration
 
   = stylesheet_link_tag "admin/application"
   = javascript_include_tag "vendor/custom.modernizr"
@@ -29,9 +31,9 @@
         - if current_user
           .row
             .small-11.columns
-              = "#{t(:login_as)} '#{current_user}'"
+              = "#{t(:login_as).mb_chars.capitalize} '#{current_user}'"
             .small-1.columns
-              = link_to t(:sign_out), destroy_user_session_path, method: :delete, class: "inline tiny button alert"
+              = link_to t(:sign_out).mb_chars.capitalize, destroy_user_session_path, method: :delete, class: "inline tiny button alert"
 
   = yield
 

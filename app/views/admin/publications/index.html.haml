@@ -1,3 +1,5 @@
+- content_for :title, t(:publications).mb_chars.capitalize
+
 .row
   .small-12.columns
     %h1= t(:publications).mb_chars.capitalize
@@ -21,4 +23,4 @@
             %td= l(publication.created_at, format: :short)
             %td
               = link_to t(:edit).mb_chars.capitalize, edit_admin_publication_path(publication), class: "inline tiny button"
-              = link_to t(:delete).mb_chars.capitalize, admin_publication_path(publication), method: :delete, confirm: t(:are_you_sure?), class: "inline tiny button alert"
+              = link_to t(:delete).mb_chars.capitalize, admin_publication_path(publication), method: :delete, confirm: t(:are_you_sure?).mb_chars.capitalize, class: "inline tiny button alert"
