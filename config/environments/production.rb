@@ -78,3 +78,10 @@ VDS::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 end
+
+# Store paperclip files in Dropbox
+Paperclip::Attachment.default_options.merge!({
+  storage: :dropbox,
+  dropbox_credentials: Rails.root.join("config/dropbox.yml")
+})
+

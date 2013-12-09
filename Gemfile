@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'sqlite3', group: [:development, :test]
 
 # Use postgres as a database for Active Record in production
-gem 'pg', group: [:production]
+gem 'pg', group: :production
 
 # Use puma web server in production
 gem 'puma'#, group: [:production]
@@ -51,7 +51,7 @@ end
 gem 'debugger', group: [:development, :test]
 
 # Use Procfile
-gem 'foreman', group: [:development]
+gem 'foreman', group: :development
 
 # Use HAML templates
 gem "haml-rails"
@@ -73,3 +73,6 @@ gem 'devise'
 
 # Support for heroku hosting
 gem 'rails_12factor', group: :production
+
+# Store local files on dropbox in production
+gem "paperclip-dropbox", group: :production
