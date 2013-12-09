@@ -17,7 +17,7 @@
         - @publications.each do |publication|
           %tr
             %td.publication_thumbnail= image_tag(publication.thumbnail(:thumb)) if publication.thumbnail?
-            %td= publication.title
+            %td= link_to publication.title, publication_path(publication.id)
             %td= l(publication.created_at, format: :short)
             %td
               = link_to t(:edit).mb_chars.capitalize, edit_admin_publication_path(publication), class: "inline tiny button"
