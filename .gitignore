@@ -20,3 +20,6 @@
 
 # Ignore Paperclip storage
 /public/system
+
+# Ignore local ENV file
+.env
