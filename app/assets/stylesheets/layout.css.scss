@@ -5,9 +5,10 @@ body {
   background-color: $dark-gray;
   color: $white;
 
-  // Set the width of the page, no support for small screen for now
-  width: $row-width;
-  margin: auto;
+  .row {
+    // Set the width of the page, no support for small screen for now
+    width: $row-width;
+  }
 
   a {
     color: inherit;
