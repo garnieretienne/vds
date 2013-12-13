@@ -12,12 +12,16 @@ body {
     background-image: url(image_path('gray_pattern.jpg'));
     padding: 2em;
     text-align: center;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
 
     #logo_vds {
       height: 6em;
     }
+  }
+
+  #binding-publication {
+    background-image: url(asset_path('binding_publication.jpg'));
+    height: 60px;
+    width: 100%;
   }
 
   footer#page-footer {
@@ -29,6 +33,11 @@ body {
 
     img {
       height: 4em;
+      padding: 0 1em;
     }
   }
+}
+
+.small-text {
+  font-size: 0.8em;
 }

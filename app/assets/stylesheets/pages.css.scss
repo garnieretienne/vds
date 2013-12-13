@@ -2,18 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#banner {
+  margin-bottom: 2em;
+
+  #new-album-cover {
+    margin-top: 3em;
+  }
+
+  #new-album-title-text {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}
+
+#view-all-publications, #download-biography {
+  float: right;
+  margin-bottom: 1em;
+
+  &:before {
+    content: ">> ";
+    width: 1em;
+  }
+}
+
 #last-publication {
   background-image: url(image_path('red_pattern.jpg'));
   padding: 2em 0;
 
   #view-all-publications {
-    float: right;
-    margin-bottom: 1em;
     margin-top: -1em;
+  }
+}
 
-    &:before {
-      content: ">> ";
-      width: 1em;
-    }
+#binding-biography {
+  background-image: url(asset_path('binding_biography.jpg'));
+  height: 60px;
+  width: 100%;
+}
+
+#biography {
+  background-image: url(image_path('yellow_pattern.jpg'));
+  padding: 2em 0;
+
+  #download-biography {
+    color: black;
+    margin-right: 8em;
   }
 }

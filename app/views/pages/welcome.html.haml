@@ -1,8 +1,39 @@
 - content_for :title, t(:welcome).mb_chars.capitalize
 
+#banner
+  .row
+    .small-offset-2.small-8.columns
+      .row
+        .small-6.columns
+          = image_tag "new_album_cover.png", id: "new-album-cover"
+        .small-6.columns
+          = image_tag "new_album_title_text.png", id: "new-album-title-text"
+          %p.small-text
+            Les Voleurs de swing ont donc décidé d’enregistrer un quatrième Album !
+            %br
+            Où trouvent-ils leur énergie ?
+            %br
+            Comment comprendre leur langue étrange ? Pourquoi jouent-ils pieds nues?
+            %br
+            Les réponses vous seront peut-être enseignées sur leurs prochain Opus :
+            %strong Le Déconservatoire.
+            %br
+            Sur un fond tzigane, cet album confronte la musique classique (violon / contrebasse) avec le Rock n’ Roll (Guitare électrique/ Batterie).
+            %br
+            C’est en revenant aux sources et au parcours de chacun que le concept de ce disque est née !
+
+#binding-publication
 #last-publication
   .row
-    = image_tag "last_publication_text.png", id: "last-publication-text"
-    - if @publication
-      = render "publications/publication", publication: @publication
-      = link_to t(:all_publications).mb_chars.capitalize, publications_path, id: "view-all-publications"
+    .small-8.columns.small-offset-2
+      = image_tag "last_publication_text.png", id: "last-publication-text"
+      - if @publication
+        = render "publications/publication", publication: @publication
+        = link_to t(:all_publications).mb_chars.capitalize, publications_path, id: "view-all-publications"
+
+#binding-biography
+#biography
+  .row
+    .small-12.columns
+      = image_tag 'biography.jpg'
+      = link_to t(:download_biography).mb_chars.capitalize, "/Biographie-Voleurs_de_swing-2014.pdf", id: "download-biography"
