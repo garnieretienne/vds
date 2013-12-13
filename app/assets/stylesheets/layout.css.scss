@@ -1,8 +1,12 @@
 @import "config";
+@import "foundation_and_overrides";
 
 body {
   background-color: $dark-gray;
   color: $white;
+
+  // Set the width of the page, no support for small screen for now
+  width: $row-width;
 
   a {
     color: inherit;
