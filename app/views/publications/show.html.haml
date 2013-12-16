@@ -1,5 +1,6 @@
 - content_for :title, @publication.title
 
 .row
-  .small-10.small-offset-1.columns
+  .small-8.small-offset-2.columns
     = render @publication
+    = link_to t(:all_publications).mb_chars.capitalize, publications_path, id: "view-all-publications"
