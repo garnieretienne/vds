@@ -3,6 +3,7 @@
 
 body {
   background-color: $dark-gray;
+  background-image: url(image_path('gray_pattern.jpg'));
   color: $white;
 
   .row {
@@ -12,10 +13,13 @@ body {
 
   a {
     color: inherit;
+
+    &:visited {
+      color: inherit;
+    }
   }
 
   header#page-header {
-    background-image: url(image_path('gray_pattern.jpg'));
     padding: 2em;
     text-align: center;
 
